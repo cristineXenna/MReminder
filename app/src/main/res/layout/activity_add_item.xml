@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity"
+    android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Medicine"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="@font/itim_regular"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <EditText
+                android:id="@+id/add_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <EditText
+                android:id="@+id/add_dose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unit"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <RadioGroup
+                android:id="@+id/unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:fontFamily="@font/ibm_sans"
+                    android:textColor="@color/main_gray"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/capsule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capsule"
+                    android:fontFamily="@font/ibm_sans"
+                    android:textColor="@color/main_gray"
+                    android:layout_marginRight="10dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Range"
+                android:fontFamily="@font/ibm_sans"
+                android:textColor="@color/main_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/add_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_gray"
+                    android:fontFamily="@font/ibm_sans"
+                    android:enabled="false"/>
+                <Button
+                    android:id="@+id/add_date_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total of Medecines"
+                    android:textColor="@color/main_gray"
+                    android:fontFamily="@font/ibm_sans"/>
+
+                <EditText
+                    android:id="@+id/total_of_medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_gray"
+                    android:fontFamily="@font/ibm_sans"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notification"
+                    android:textColor="@color/main_gray"
+                    android:fontFamily="@font/ibm_sans"/>
+                <LinearLayout
+                    android:id="@+id/layoutNotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutNotif2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/notifBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_add2"
+                        android:background="@color/main_blue"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Image"
+                    android:textColor="@color/main_gray"
+                    android:fontFamily="@font/ibm_sans"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/cancleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancle"
+            android:fontFamily="@font/ibm_sans"
+            android:background="@drawable/button_shape"
+            app:backgroundTint="@color/red"/>
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="OK"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ibm_sans"
+            android:background="@drawable/button_shape"
+            app:backgroundTint="@color/main_blue"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_below="@id/layout"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:button="@drawable/img_1"
+            android:background="@drawable/alignment_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:button="@drawable/img_2"
+            android:background="@drawable/alignment_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:button="@drawable/img_3"
+            android:background="@drawable/alignment_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:button="@drawable/img_4"
+            android:background="@drawable/alignment_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:button="@drawable/img_5"
+            android:background="@drawable/alignment_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

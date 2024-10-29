@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "212051287663",
+    "firebase_url": "https://skripsikitin-default-rtdb.firebaseio.com",
+    "project_id": "skripsikitin",
+    "storage_bucket": "skripsikitin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212051287663:android:d3ebaefd11bcadec28379a",
+        "android_client_info": {
+          "package_name": "com.example.mreminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WjHupK0MdC4XcwLVsD83skmGF8ZrRcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
